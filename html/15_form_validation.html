@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- pattern : [A-Za-z]  -->
+
+    <table align="center">
+
+        <form action="">
+            <tr>
+                <td><label for="">Enter your Name</label></td>
+                <td><input type="text" pattern="[A-Za-z]{3,7}" placeholder="enter your name" required value=""
+                        title="Name"></td>
+            </tr>
+            <tr>
+                <!-- shubhamjadav5@gmail.com -->
+                <td><label for="">Enter your Email</label></td>
+                <td><input type="email" placeholder="Enter your Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your phone</label></td>
+                <td><input type="tel" maxlength="10" pattern="[6-9][0-9]{9}" placeholder="Enter your phone" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Select to gender</td>
+                <td> male <input name="xy" type="radio">
+                    female <input name="xy" type="radio">
+
+                    other <input name="xy" type="radio">
+                </td>
+            </tr>
+            <tr>
+                <!--  -->
+                <td><label for="">Enter your password</label></td>
+                <td><input type="password" pattern="[A-Z][a-zA-Z0-9]{8,12}" placeholder="Enter your password" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit"></td>
+            </tr>
+        </form>
+    </table>
+
+
+
+</body>
+
+</html>
