@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            background-color: red;
+        }
+        ul li:last-child{
+            background-color: aqua;
+        }
+        ul li:nth-child(3){
+            background-color: green;
+        }
+        ul li:nth-child(even){
+            background-color: blue;
+        }
+        ul li:nth-child(odd){
+            background-color: lightcoral;
+        }
+        ul li:nth-last-child(1){
+            background-color: brown;
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+             transition: 1s;
+        }
+        .main:hover{
+            background-color: lawngreen;
+            transform: translateX(100px);
+            border-radius: 50%;
+           /* color: red; */
+        }
+        .main:hover a{
+            color: red;
+        }
+        input{
+            border: none;
+            outline: none;
+        }
+        input:focus{
+            background-color: lightcoral;
+            border: 3px solid green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- class :  -->
+    <!-- element :: -->
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+    </ul>
+
+    <!--1 prenent allow
+        2) prenet hover child alloww
+        3) child to prenete not allow  
+    -->
+    <div class="main">
+        <a href="">Hello</a>
+    </div>
+
+    <input type="text" name="" placeholder="enter your text" id="">
+</body>
+</html>
