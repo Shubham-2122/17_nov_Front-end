@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+
+        }
+        section{
+            background-color: orange;
+            height: 800px;
+            border: 2px solid gray;
+        }
+        /* #box1{
+            position: static;
+            top: 200px;
+            left: 200px;
+        } */
+
+        /* #box2{
+            position: fixed;
+            right: 100px;
+            top: 10px;
+            bottom: 0px;
+        } */
+         /* #box3{ 
+            position: sticky;
+            top: 0;
+         } */
+          /* #box4{
+            position: relative;
+            top: 20px;
+            left: 40px;
+          } */
+    </style>
+</head>
+<body>
+    <!-- 1) static : by defult : left,right,top,bottom : px
+    2) fixed : body tag fix : left,right,top,bottom : px
+    3) sticky : section tag fix : left,right,top,bottom : px
+    4) releative : perent allow :  left,right,top,bottom : px
+    5) abosulte : child allow : left,right,top,bottom : px -->
+
+
+    <section class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </section>
+    <section></section>
+    <section></section>
+</body>
+</html>
