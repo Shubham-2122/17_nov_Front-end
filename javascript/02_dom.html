@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dom : Document object model -->
+
+    <!-- 1) console log  -->
+
+    <!-- internal js -->
+
+    <h1 id="h1">Hello h1</h1>
+
+    <h2 id="data"></h2>
+
+    <h2 id="h2"></h2>
+    
+    
+    <!-- internal js -->
+    <script>
+        
+        // 1) console print
+
+        console.log("Hello javascript"); 
+        console.log("hello shubham")
+        console.log(20+30)
+
+        // 2) document write 
+        document.write("hello javascript")
+        document.writeln("<br>hello shubham jadav")
+        document.writeln("<h1>hello</h1>")
+
+        // 3) methdo select and print
+        // console.log(document.getElementById("h1"))
+        document.getElementById("h1").innerText = "Hello sujal"
+
+        // only text allow tag count not 
+        console.log(document.getElementById("data"))
+        document.getElementById("data").innerText = "<i>Hello this data</i>"
+
+        // method innerHTML : tag and string allow
+        document.getElementById("h2").innerHTML = "<i>karan patel</i>"
+
+
+
+    </script>
+
+</body>
+</html>

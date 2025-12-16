@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- varibles : it's simple singale/mutiple value store in single varibale.  -->
+
+    <!-- syntax : 
+    var-type name = value  -->
+    
+    <!-- rule : 
+    1) do not start with number (12shubham)
+    2) do not start with symbols (#@asdgj)
+    3) do not start with keyword (console)- 32 keyword  -->
+
+
+    <script>
+
+        // 1) var : global 
+        var x = 10 //decalration 
+        var x = 12 // re-delcartion allow
+        x = 15 // re-assigement allow
+        console.log("x :",x)
+        document.writeln("x : ",x)
+
+
+        // 2) let : local 
+        let y = 20  //decalration allow
+        // let y = 25 // re-delcation not allow 
+        y = 30 // re-assigement allow
+
+        console.log("y :",y)
+
+        // 3) const : unique 
+        const z = 40 //decalration allow
+        // const z = 45 // re-delcation not allow
+        z = 70 // re-assigement not allow
+        console.log("z :",z) 
+
+
+    </script>
+
+</body>
+</html>
