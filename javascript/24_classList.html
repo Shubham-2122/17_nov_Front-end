@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .data{
+            background: linear-gradient(red,green,blue);
+            color: white;
+            padding: 50px;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Hello classlist Data</h1>
+
+    <button onclick="adddata()">Show</button>
+
+    <button onclick="removedata()">Remove</button>
+
+    <button onclick="toggledata()">Toggle</button>
+
+    <script>
+
+        let h1_tag = document.getElementById("h1")
+
+        function adddata(){
+            h1_tag.classList.add("data");
+        }
+
+        function removedata(){
+            h1_tag.classList.remove("data")
+        }
+
+        function toggledata(){
+            h1_tag.classList.toggle("data")
+        }
+
+    </script>
+</body>
+</html>

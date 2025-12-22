@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="data" onmouseenter="demo()" onmouseleave="demo2()">Hello this h1 data</h1>
+
+    <button onclick="demo()">show data</button>
+
+    <script>
+
+        let h1_tag = document.getElementById("data")
+
+        function demo(){
+            h1_tag.innerHTML = "<i>Hello this data</i>";
+            h1_tag.style.background = "blue"
+            h1_tag.style.color ="white"
+        }
+
+         function demo2(){
+            h1_tag.innerHTML = "<i>Hello this h1 data</i>";
+            h1_tag.style.background = "red"
+            h1_tag.style.color ="white"
+        }
+
+    </script>
+</body>
+</html>
