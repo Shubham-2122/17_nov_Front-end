@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- non-premeitive :  all primitve datatype store  -->
+
+    <!-- array : collection of multiple value store in single variable_name [] 
+        start index 0
+        
+        syntax 
+        let array = [1,,3,4334,5,]
+
+        console.log(array[index])
+    -->
+
+    <script>
+        let array = [1,2,3,4,"shubham","abhishek","hello",6,7,8]
+        console.log(array)
+        // console.log(array[4])
+        // console.log(array[8])
+        // document.writeln(array[4])
+
+        // simple for loop
+        // for(let i=0;i<array.length;i++){
+        //     // console.log(i)
+        //     console.log(array[i])
+        //     document.writeln(array[i],"<br>")
+        // }
+
+        // for of : value
+        // for(let data of array){
+        //     console.log(data)
+        //     document.writeln(data,"<br>")
+        // }
+
+        // for in : index ,value
+
+        for(let data in array){
+            // console.log(data)
+            console.log(array[data])
+        }
+
+
+    </script>
+
+</body>
+</html>
