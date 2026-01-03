@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let arr = [1,2,3,4,5,6]
+        console.log(arr)
+
+        // console.log(arr[0])
+
+        // 1 simple for loop
+        // for(let i=0;i<arr.length;i++){
+        //     console.log(arr[i])
+        //     document.writeln(arr[i],"<br>")
+        // }
+
+        // 2 for type advance es7 for of value
+        // for(let data of arr){
+        //     console.log(data)
+        // }
+
+        // for in index , value
+
+        // 3 for(let data in arr){
+        //     // console.log(data)
+        //     console.log(arr[data])
+        // }
+
+        //4 forEach : index and value sprate
+
+        arr.forEach((val,i)=>{
+            // console.log(val)
+            console.log(i)
+        })
+
+    </script>
+</body>
+</html>
