@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Class : collection of data memeber(varibale) and member function(function) .class 
+    class : it's blue print of object 
+    
+    syntax : 
+    class Class-name{
+        member function(){
+            data memeber
+        }
+    }
+
+    let user = new Class-name -->
+
+
+    <script>
+
+
+        class Bank{
+
+            // memeber function
+            x = function Details(pin,blance){
+
+                // data member
+                let bankName = "HDFC"
+                let BankIFSC = "HDFC001H"
+                let Bpin = pin
+                let BBlance = blance
+
+                console.log("bank Name : ",bankName)
+                console.log("IFSC : ",BankIFSC)
+                // console.log("Bpin : ",Bpin)
+                console.log("Balnce : ",BBlance)
+            }
+            y = function widhr(){
+                console.log("Bank data")
+            }
+        }
+
+        // console.log(Bank)
+        const user = new Bank
+        console.log(user)
+        user.x(123,5000)
+
+        const karan = new Bank
+        console.log(karan)
+        karan.x(234,6000)
+        karan.y()
+        
+    </script>
+
+</body>
+</html>
