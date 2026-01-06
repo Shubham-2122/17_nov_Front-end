@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- constro : automaticalyy call ,inbulit function inside class A class may only have one constructor  -->
+
+
+    <script>
+        class AB {
+            constructor() {
+                console.log("hello construtor..logic")
+            }
+            x = function data() {
+                console.log("hello data")
+            }
+            y = function data1() {
+                console.log("hello Function")
+            }
+            //    constructor(){
+            //     console.log("hello")
+            //    }
+        }
+
+        const users = new AB;
+        // console.log(users)
+        users.x()
+    </script>
+</body>
+
+</html>

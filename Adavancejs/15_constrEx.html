@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- logic value  -->
+
+    <script>
+
+        class Arith{
+            constructor(a,b){
+                this.a = a
+                this.b = b
+                console.log("a : ",this.a)
+                console.log("b : ",this.b)
+                console.log("hello")
+            }
+
+            x = function sum(){
+                console.log(`sum : ${this.a + this.b}`);
+            }
+            y = function sub(){
+                console.log(`sub : ${this.a - this.b}`);
+            }
+        }
+         const ob =  new Arith(40,20)
+         ob.x()
+        ob.y()
+
+
+        const shubham = new Arith(50,20)
+        shubham.y()
+    </script>
+</body>
+</html>

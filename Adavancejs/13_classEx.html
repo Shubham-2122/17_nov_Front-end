@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Artih{
+            // store without para
+            x = function sum(){
+                let a =30,b=20;
+                console.log("Sum => ",a+b)
+            }
+
+            y = function sub(a,b){
+                console.log("sub => ",a-b)
+            }
+
+            // withour without para
+            mul(a,b){
+                console.log("Mul =>",a*b)
+            }
+
+            divi(){
+                let a =30,b=20;
+                console.log("divi =>",a/b)
+            }
+        }
+
+        const user = new Artih;
+        console.log(user)
+        user.divi()
+        user.x() 
+        user.y(60,20)
+        user.mul(30,2)
+    </script>
+</body>
+</html>
