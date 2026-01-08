@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inhriatacnec : one class to another class 
+
+    1) single : A - B 
+    2) multi level A - B - C
+    3) multiple not allow js A - C, B - C
+    4) hirachical A - B, A - C
+    5) hybird :  3 combine of inhriatacnec -->
+
+    <script>
+
+        class A {
+            x = function data(){
+                console.log("A class data")
+            }
+        }
+
+        class B extends A{
+            y = function Data1(){
+                console.log("B class Data")
+            }
+        }
+
+        const obj = new B
+        console.log(obj)
+        obj.x()
+        obj.y()
+
+    </script>
+
+
+</body>
+</html>
