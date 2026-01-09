@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Promise : it a object : res and reject
+
+    3 state 
+    1) pending : data not show
+    2) fullfield  : data show
+    3) rejected  : data error 
+    
+    let per = new Promise((res,rejct)=>{
+    
+    })
+    
+    
+    -->
+
+    <script>
+
+        
+
+        let data = new Promise((success,reject)=>{
+            let x = 10
+            // codition yes
+            if(x == 11){
+                success("Yes data")
+            }
+            else{
+                reject("no data")
+            }
+        })
+
+        console.log(data)
+
+    </script>
+
+
+</body>
+</html>

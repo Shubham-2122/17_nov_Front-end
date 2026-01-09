@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let data = {
+            fullname : function demo(city,state){
+                console.log("Fname : ",this.fname, " lname : ",this.lname, " city : ",city," state :",state)
+            }
+        }
+
+        let person = {
+            fname : "karan",
+            lname : "patel"
+        }
+
+        let person1={
+            fname : "aniket",
+            lname : "jadav"
+        }
+
+        // call aragument single pass
+        data.fullname.call(person,"surat","gujarat")
+
+        // apply arguament array as argument
+        data.fullname.apply(person1,["bharuch","gujarat"])
+
+    </script>
+</body>
+</html>

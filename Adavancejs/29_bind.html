@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let data = {
+            fullname : function demo(){
+                console.log("Fname : ",this.fname, " lname : ",this.lname)
+            }
+        }
+
+        let person = {
+            fname : "karan",
+            lname : "patel"
+        }
+
+        // bind method two combie and object creted call
+        let demo = data.fullname.bind(person)
+        demo()
+     
+
+    </script>
+</body>
+</html>

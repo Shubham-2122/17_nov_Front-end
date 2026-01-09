@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       function demo(res){
+        console.log(res)
+       }
+       
+       
+       let pro =  new Promise((res,rej)=>{
+            if(!res){
+                res("inside if")
+            }
+            else{
+                rej("inside else")
+            }
+        })
+        .then((res)=>{
+            // result yes
+            demo(res)
+        })
+        .catch((res)=>{
+            // catch no
+            demo(res)
+        })
+    
+
+    
+
+        // console.log(pro)
+    </script>
+</body>
+</html>
