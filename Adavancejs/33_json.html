@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- json : javascipt object noation 
+        key : value 
+        lighwight 
+        easy read and use it 
+
+        json : not read javascript
+    -->
+
+    <!-- 
+        let json = `[{
+            "id":"1",
+            "name":"hello",
+            "Course":"Front-end"
+        }]`
+
+        let object = [{
+            id : "1",
+            name : "Hello",
+            Coruse : "Fornt-end"
+        }]
+
+    -->
+
+    <script>
+        let jsondata = `[
+            {
+                "id":"1",
+                "name":"karan",
+                "course":"Front-end"
+            },
+            {
+                "id":"2",
+                "name":"ashish",
+                "course":"back-end"
+            },
+            {
+                "id":"3",
+                "name":"jay",
+                "course":"Full-stack"
+            }
+        ]`
+
+        console.log(jsondata)
+        // document.writeln(jsondata)
+
+        // json convert array/object
+        let objdata =JSON.parse(jsondata)
+        console.log(objdata)
+
+        objdata.forEach((data,index) => {
+            console.log(data)
+            document.writeln(`<h3>id : ${data.id} name : ${data.name} </h3>`)
+        });
+
+
+        // 
+        let objectda = [
+            {
+                id:1,
+                name : "Shubham",
+                course : "MERN-stack"
+            },
+            {
+                id:2,
+                name : "jigar",
+                course : "back-end"
+            },
+            {
+                id:3,
+                name : "guarve",
+                course : "UI-UX"
+            }
+        ]
+        console.log(objectda)
+
+        let hello = JSON.stringify(objectda)
+        console.log(hello)
+
+    </script>
+</body>
+</html>

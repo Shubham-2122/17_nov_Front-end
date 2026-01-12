@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch : inbulit method for js : back-end data view  -->
+    <!--
+        Get : all product 
+        post : new Product 
+        put/patch: update product
+        delete : product remove
+
+
+        syntax : 
+        fetch('path',{
+           method: 
+        })
+        .then(convert code )
+        .then(printf)
+        .catch(error)
+    
+    
+        -->
+
+    <script>
+        fetch("data.txt",{
+            method:"GET"
+        })
+        .then((res)=>{
+            // console.log(res.text())
+            // text file string js
+            return res.text()
+        })
+        .then((data)=>{
+            console.log(data)
+            document.writeln(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    </script>
+
+</body>
+</html>

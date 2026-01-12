@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="data()">Show data</button>
+    <script>
+        function data(){
+            fetch("data.json",{
+            method:"GET"
+        })
+        .then((res)=>{
+            // json to object/array
+            return res.json()
+        })
+        .then((res)=>{
+            console.log(res)
+
+           res.forEach((data) => {
+                console.log(data)
+                document.writeln(`<h3>id : ${data.id} name : ${data.name} course : ${data.course}</h3>`)
+           });
+        
+        })
+        }
+    </script>
+</body>
+</html>
