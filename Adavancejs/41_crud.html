@@ -18,7 +18,7 @@
                 console.log(users)
             }
         }
-        getdata()
+        // getdata()
 
         // post new data
         let person = {
@@ -32,6 +32,33 @@
             console.log(res.data)
         }
         // newUser()
+
+        // delete user 
+
+        const deleteuser = async ()=>{
+            try {
+                const res = await axios.delete(`https://660d95e36ddfa2943b34c530.mockapi.io/users/11`)
+                console.log(res.data)
+            } catch (error) {
+                console.log("Api data not Found")
+            }
+        }
+
+        // deleteuser()
+
+        let perosn1 = {
+            id:"2",
+            name:"arayan",
+            phone : "386757845",
+            city:"ahemdabad"
+        }
+
+        const updateuser = async()=>{
+            const res = await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/users/${perosn1.id}`,perosn1)
+            console.log(res.data)
+        }
+        updateuser()
+
 
     </script>
 </body>

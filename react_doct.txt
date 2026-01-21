@@ -1,0 +1,39 @@
+React : javascript lib
+agul : fremework
+
+React vs agul vs vue
+
+react : single page
+react : compoenent header,footer
+react : fast 
+react : vitrual dom -> real Dom copy
+
+
+Requirement : clinet server
+
+Node :  javascript Runtime-enviroment
+
+-> Node -v
+	v24.11.1
+
+-> npm v
+	node package manager
+
+-> React first application install
+	1) node -v
+	2) npm -v
+	
+	npm(global) vs npx(external)
+
+	Project install 
+	C : desktop 
+	
+	cmd : npx create-react-app app-name
+	cmd : cd app-name
+	cmd : npm start
+
+-> React + vite 
+	cmd : npm create vite@latest my-react-app
+	cmd : npm run dev
+
+
