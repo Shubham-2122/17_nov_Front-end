@@ -32,8 +32,22 @@ Node :  javascript Runtime-enviroment
 	cmd : cd app-name
 	cmd : npm start
 
+-> React folder struc
+	1) node module : npm install
+		1) bulit in
+		2) local 
+		3) 3rd party
+	2) public :  index.html 
+		     Static imge assesst
+	3) Src : index.js
+		 App.js
+		index.html -> index.js -> App.js
+	4) package-lock.json,package.json		
+
 -> React + vite 
 	cmd : npm create vite@latest my-react-app
 	cmd : npm run dev
+
+
 
 
