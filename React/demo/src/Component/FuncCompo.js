@@ -5,9 +5,13 @@
 import React from "react";
 
 function FuncCompo(){
+
+    let name = "hello"
+    
     return(
         <div>
             <h1>Hello this Function compoenet</h1>
+            <h1>{name}</h1>
         </div>
     )
 }

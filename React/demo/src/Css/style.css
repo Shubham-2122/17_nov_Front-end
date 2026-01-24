@@ -1,0 +1,10 @@
+.data{
+    background: linear-gradient(red,green,blue);
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+#hello{
+    background-color: aqua;
+}
