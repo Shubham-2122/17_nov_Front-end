@@ -1,8 +1,10 @@
 import React from "react";
 // import Hello from "./Jsx/Hello";
 // import Cssdata from "./Css/Cssdata";
-import MainProps from "./Props/MainProps";
-import MainState from "./State/MainState";
+// import MainProps from "./Props/MainProps";
+// import MainState from "./State/MainState";
+// import FormData from "./Form_hadling/FormData";
+import FormObj from "./Form_hadling/FormObj";
 // import FuncCompo from "./Component/FuncCompo";
 // import ClassCompo from "./Component/ClassCompo";
 
@@ -27,7 +29,11 @@ function App() {
 
 
             {/* <State  */}
-            <MainState />
+            {/* <MainState /> */}
+
+            {/* form handling */}
+            {/* <FormData /> */}
+            <FormObj />
         </div>
     )
 }
