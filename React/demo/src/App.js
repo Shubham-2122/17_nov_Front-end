@@ -4,7 +4,10 @@ import React from "react";
 // import MainProps from "./Props/MainProps";
 // import MainState from "./State/MainState";
 // import FormData from "./Form_hadling/FormData";
-import FormObj from "./Form_hadling/FormObj";
+// import FormObj from "./Form_hadling/FormObj";
+// import UseDate from "./useEffect/UseDate";
+// import UsersData from "./useEffect/UsersData";
+import UserAxios from "./useEffect/UserAxios";
 // import FuncCompo from "./Component/FuncCompo";
 // import ClassCompo from "./Component/ClassCompo";
 
@@ -33,7 +36,12 @@ function App() {
 
             {/* form handling */}
             {/* <FormData /> */}
-            <FormObj />
+            {/* <FormObj /> */}
+
+            {/* api data show */}
+            {/* <UseDate /> */}
+            {/* <UsersData /> */}
+            <UserAxios />
         </div>
     )
 }
