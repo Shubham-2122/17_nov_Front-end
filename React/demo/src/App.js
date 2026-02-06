@@ -7,7 +7,8 @@ import React from "react";
 // import FormObj from "./Form_hadling/FormObj";
 // import UseDate from "./useEffect/UseDate";
 // import UsersData from "./useEffect/UsersData";
-import UserAxios from "./useEffect/UserAxios";
+// import UserAxios from "./useEffect/UserAxios";
+import ProductData from "./useEffect/ProductData";
 // import FuncCompo from "./Component/FuncCompo";
 // import ClassCompo from "./Component/ClassCompo";
 
@@ -41,7 +42,8 @@ function App() {
             {/* api data show */}
             {/* <UseDate /> */}
             {/* <UsersData /> */}
-            <UserAxios />
+            {/* <UserAxios /> */}
+            <ProductData />
         </div>
     )
 }
