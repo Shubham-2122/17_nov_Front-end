@@ -8,7 +8,8 @@ import React from "react";
 // import UseDate from "./useEffect/UseDate";
 // import UsersData from "./useEffect/UsersData";
 // import UserAxios from "./useEffect/UserAxios";
-import ProductData from "./useEffect/ProductData";
+// import ProductData from "./useEffect/ProductData";
+import MainContext from "./context/MainContext";
 // import FuncCompo from "./Component/FuncCompo";
 // import ClassCompo from "./Component/ClassCompo";
 
@@ -43,7 +44,11 @@ function App() {
             {/* <UseDate /> */}
             {/* <UsersData /> */}
             {/* <UserAxios /> */}
-            <ProductData />
+            {/* <ProductData /> */}
+
+
+            {/* Context */}
+            <MainContext />
         </div>
     )
 }
