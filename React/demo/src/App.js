@@ -1,4 +1,8 @@
 import React from "react";
+import BookData from "./Design/BookData";
+import ReacCard from "./Design/ReacCard";
+import MDdata from "./Design/MDdata";
+import Logindata from "./Design/Logindata";
 // import Hello from "./Jsx/Hello";
 // import Cssdata from "./Css/Cssdata";
 // import MainProps from "./Props/MainProps";
@@ -9,7 +13,7 @@ import React from "react";
 // import UsersData from "./useEffect/UsersData";
 // import UserAxios from "./useEffect/UserAxios";
 // import ProductData from "./useEffect/ProductData";
-import MainContext from "./context/MainContext";
+// import MainContext from "./context/MainContext";
 // import FuncCompo from "./Component/FuncCompo";
 // import ClassCompo from "./Component/ClassCompo";
 
@@ -48,7 +52,13 @@ function App() {
 
 
             {/* Context */}
-            <MainContext />
+            {/* <MainContext /> */}
+
+            {/* design data */}
+            {/* <BookData /> */}
+            {/* <ReacCard /> */}
+            <Logindata />
+            <MDdata />
         </div>
     )
 }
