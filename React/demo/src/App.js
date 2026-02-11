@@ -1,8 +1,12 @@
 import React from "react";
-import BookData from "./Design/BookData";
-import ReacCard from "./Design/ReacCard";
-import MDdata from "./Design/MDdata";
-import Logindata from "./Design/Logindata";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Layout/Pages/Home";
+import About from "./Layout/Pages/About";
+import Contact from "./Layout/Pages/Contact";
+// import BookData from "./Design/BookData";
+// import ReacCard from "./Design/ReacCard";
+// import MDdata from "./Design/MDdata";
+// import Logindata from "./Design/Logindata";
 // import Hello from "./Jsx/Hello";
 // import Cssdata from "./Css/Cssdata";
 // import MainProps from "./Props/MainProps";
@@ -19,47 +23,57 @@ import Logindata from "./Design/Logindata";
 
 function App() {
     return (
-        <div>
-            {/* <h1>Hello this App file</h1> */}
+        <BrowserRouter>
 
-            {/* Compoenent */}
-            {/* <ClassCompo /> */}
-            {/* <FuncCompo /> */}
-            {/* <FuncCompo /> */}
+            <div>
+                {/* <h1>Hello this App file</h1> */}
 
-            {/* jsx component */}
-            {/* <Hello /> */}
+                {/* Compoenent */}
+                {/* <ClassCompo /> */}
+                {/* <FuncCompo /> */}
+                {/* <FuncCompo /> */}
 
-            {/* css */}
-            {/* <Cssdata /> */}
+                {/* jsx component */}
+                {/* <Hello /> */}
 
-        {/* Porps data */}
-            {/* <MainProps /> */}
+                {/* css */}
+                {/* <Cssdata /> */}
 
-
-            {/* <State  */}
-            {/* <MainState /> */}
-
-            {/* form handling */}
-            {/* <FormData /> */}
-            {/* <FormObj /> */}
-
-            {/* api data show */}
-            {/* <UseDate /> */}
-            {/* <UsersData /> */}
-            {/* <UserAxios /> */}
-            {/* <ProductData /> */}
+                {/* Porps data */}
+                {/* <MainProps /> */}
 
 
-            {/* Context */}
-            {/* <MainContext /> */}
+                {/* <State  */}
+                {/* <MainState /> */}
 
-            {/* design data */}
-            {/* <BookData /> */}
-            {/* <ReacCard /> */}
-            <Logindata />
-            <MDdata />
-        </div>
+                {/* form handling */}
+                {/* <FormData /> */}
+                {/* <FormObj /> */}
+
+                {/* api data show */}
+                {/* <UseDate /> */}
+                {/* <UsersData /> */}
+                {/* <UserAxios /> */}
+                {/* <ProductData /> */}
+
+
+                {/* Context */}
+                {/* <MainContext /> */}
+
+                {/* design data */}
+                {/* <BookData /> */}
+                {/* <ReacCard /> */}
+                {/* <Logindata /> */}
+                {/* <MDdata /> */}
+
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+
+            </div>
+        </BrowserRouter>
     )
 }
 export default App;
