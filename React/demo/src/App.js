@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Layout/Pages/Home";
 import About from "./Layout/Pages/About";
 import Contact from "./Layout/Pages/Contact";
+import About1 from "./Layout/Pages/About1";
+import About2 from "./Layout/Pages/About2";
+import Not from "./Layout/Pages/Not";
 // import BookData from "./Design/BookData";
 // import ReacCard from "./Design/ReacCard";
 // import MDdata from "./Design/MDdata";
@@ -67,9 +70,17 @@ function App() {
                 {/* <MDdata /> */}
 
                 <Routes>
+                    {/* validate page */}
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
+                    <Route path="/about" element={<About />} >
+                        <Route path="about1" element={<About1 />} />
+                        <Route path="about2" element={<About2 />} />
+                    </Route>
                     <Route path="/contact" element={<Contact />} />
+
+
+                    {/* 404 not Found page */}
+                    <Route path="*" element={<Not />} />
                 </Routes>
 
             </div>
