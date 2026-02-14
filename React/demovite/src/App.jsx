@@ -1,13 +1,15 @@
 import React from 'react'
-import Fundata from './Fundata'
+import Back from './Compoenent/Back'
+import FontData from './Compoenent/FontData'
 
 function App() {
 
 
   return (
     <div>
-      <h1>Hello this h1 tag</h1>
-      <Fundata />
+      {/* <h1 className='text-center'>Hello this h1 tag</h1> */}
+      {/* <Back /> */}
+      <FontData />
     </div>
   )
 }
