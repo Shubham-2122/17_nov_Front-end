@@ -6,7 +6,9 @@ function Header() {
         <div>
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Website</a>
+                    <a className="navbar-brand" href="#">
+                        <img src="http://topshrms.in/images/logo-tops.png" style={{width:"150px"}} alt="" />
+                    </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>
