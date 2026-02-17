@@ -4,6 +4,7 @@ import FontData from './Compoenent/FontData'
 import Border from './Compoenent/Border'
 import Space from './Compoenent/Space'
 import Flex from './Compoenent/Flex'
+import DataCss from './Compoenent/DataCss'
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       {/* <FontData /> */}
       {/* <Border /> */}
       {/* <Space />  */}
-      <Flex />
+      {/* <Flex /> */}
+      <DataCss />
     </div>
   )
 }
