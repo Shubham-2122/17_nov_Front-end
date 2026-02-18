@@ -8,6 +8,7 @@ import About2 from "./Layout/Pages/About2";
 import Not from "./Layout/Pages/Not";
 import Life from "./LifeCycle/Life";
 import Ref from "./Hooks/Ref";
+import Reduc from "./Hooks/Reduc";
 // import BookData from "./Design/BookData";
 // import ReacCard from "./Design/ReacCard";
 // import MDdata from "./Design/MDdata";
@@ -81,6 +82,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/life" element={<Life />} />
                     <Route path="/ref" element={<Ref />} />
+                    <Route path="/reduce" element={<Reduc />} />
 
 
                     {/* 404 not Found page */}

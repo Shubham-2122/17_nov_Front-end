@@ -29,6 +29,9 @@ function Header() {
                               <li className="nav-item">
                                 <NavLink className="nav-link" to="/ref" >UseRef</NavLink>
                             </li>
+                             <li className="nav-item">
+                                <NavLink className="nav-link" to="/reduce" >reducer</NavLink>
+                            </li>
                           
                             <li className="nav-item">
                                 <a className="nav-link disabled" aria-disabled="true">Disabled</a>
