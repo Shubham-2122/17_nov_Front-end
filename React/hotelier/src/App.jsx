@@ -9,6 +9,8 @@ import Team from './Website/Pages/Team'
 import Testi from './Website/Pages/Testi'
 import Contact from './Website/Pages/Contact'
 import NotFound from './Website/Pages/NotFound'
+import Dashboard from './Admin/Apages/Dashboard'
+import RoomsMange from './Admin/Acoman/RoomsMange'
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
 
 
             <Route path='*' element={<NotFound />} />
+
+
+      {/* admin */}
+          <Route path='/dash' element={<Dashboard />} />
+          <Route path='/roommange' element={<RoomsMange />} />
+
         </Routes>
 
       </div>
