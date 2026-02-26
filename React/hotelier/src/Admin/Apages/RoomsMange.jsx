@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Aheader from './Aheader'
-import AnavTi from './AnavTi'
+import Aheader from '../Acoman/Aheader'
+import AnavTi from '../Acoman/AnavTi'
 import axios from 'axios'
 
 function RoomsMange() {

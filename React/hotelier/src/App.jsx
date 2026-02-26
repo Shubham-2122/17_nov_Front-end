@@ -10,7 +10,9 @@ import Testi from './Website/Pages/Testi'
 import Contact from './Website/Pages/Contact'
 import NotFound from './Website/Pages/NotFound'
 import Dashboard from './Admin/Apages/Dashboard'
-import RoomsMange from './Admin/Acoman/RoomsMange'
+import RoomsMange from './Admin/Apages/RoomsMange'
+import RoomAdd from './Admin/Apages/RoomAdd'
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
       {/* admin */}
           <Route path='/dash' element={<Dashboard />} />
           <Route path='/roommange' element={<RoomsMange />} />
+          <Route path='/roomadd' element={<RoomAdd />} />
 
         </Routes>
 

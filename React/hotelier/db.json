@@ -1,68 +1,86 @@
 {
-    "admin":[
-        {
-            "id":1,
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "password":"1234"
-        },
-        {
-            "id":2,
-            "name":"subadmin",
-            "email":"subadmin@gmail.com",
-            "password":"123456"
-        }
-    ],
-    "users":[
-        {
-            "id":1,
-            "name":"user",
-            "email":"user@gmail.com",
-            "password":"1234",
-            "status":"unblock"
-        },
-        {
-            "id":2,
-            "name":"karan",
-            "email":"karan@gmail.com",
-            "password":"123456",
-            "status":"unblock"
-        },
-        {
-            "id":3,
-            "name":"manthan",
-            "email":"manthan@gmail.com",
-            "password":"123456",
-            "status":"block"
-        }
-    ],
-    "rooms":[
-        {
-            "id":1,
-            "name":"Executive Suite",
-            "price":"50",
-            "bed":"2",
-            "bath":"1",
-            "desc":"helloo  rooms availd for data",
-            "img":"https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?_gl=1*1wr5nxm*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExODcwJGo1NiRsMCRoMA.."
-        },
-          {
-            "id":2,
-            "name":"Super Deluxe",
-            "price":"80",
-            "bed":"3",
-            "bath":"2",
-            "desc":"helloo  rooms availd  asdsa dsa sa dfor data",
-            "img":"https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?_gl=1*1p5y1r9*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExOTI2JGo2MCRsMCRoMA.."
-        },
-         {
-            "id":3,
-            "name":"Junior Suite",
-            "price":"90",
-            "bed":"3",
-            "bath":"2",
-            "desc":"helloo  rooms dsfdsf sdfa sa dfor data",
-            "img":"https://images.pexels.com/photos/33125906/pexels-photo-33125906.jpeg?_gl=1*gybo6z*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExOTI2JGo2MCRsMCRoMA.."
-        }
-    ]
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "subadmin",
+      "email": "subadmin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "karan",
+      "email": "karan@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "manthan",
+      "email": "manthan@gmail.com",
+      "password": "123456",
+      "status": "block"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Executive Suite",
+      "price": "50",
+      "bed": "2",
+      "bath": "1",
+      "desc": "helloo  rooms availd for data",
+      "img": "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?_gl=1*1wr5nxm*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExODcwJGo1NiRsMCRoMA.."
+    },
+    {
+      "id": "2",
+      "name": "Super Deluxe",
+      "price": "80",
+      "bed": "3",
+      "bath": "2",
+      "desc": "helloo  rooms availd  asdsa dsa sa dfor data",
+      "img": "https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?_gl=1*1p5y1r9*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExOTI2JGo2MCRsMCRoMA.."
+    },
+    {
+      "id": "3",
+      "name": "Junior Suite",
+      "price": "90",
+      "bed": "3",
+      "bath": "2",
+      "desc": "helloo  rooms dsfdsf sdfa sa dfor data",
+      "img": "https://images.pexels.com/photos/33125906/pexels-photo-33125906.jpeg?_gl=1*gybo6z*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExOTI2JGo2MCRsMCRoMA.."
+    },
+    {
+      "id": "1772084196836",
+      "name": "Executive Suite",
+      "price": "150",
+      "bed": "3",
+      "bath": "2",
+      "desc": "Hello this villa for room data here",
+      "img": "https://promos.makemytrip.com/Hotels_product/Luxe/brands.png"
+    },
+    {
+      "id": "1772084434060",
+      "name": "villa rooms ",
+      "price": "200",
+      "bed": "3",
+      "bath": "3",
+      "desc": "asdasd asd sadf sdaf sdaf sdf",
+      "img": "https://promos.makemytrip.com/altacco_luxe/imgs/luxe_villa.jpg"
+    }
+  ]
 }
