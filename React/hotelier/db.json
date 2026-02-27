@@ -56,15 +56,6 @@
       "img": "https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?_gl=1*1p5y1r9*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExOTI2JGo2MCRsMCRoMA.."
     },
     {
-      "id": "3",
-      "name": "Junior Suite",
-      "price": "90",
-      "bed": "3",
-      "bath": "2",
-      "desc": "helloo  rooms dsfdsf sdfa sa dfor data",
-      "img": "https://images.pexels.com/photos/33125906/pexels-photo-33125906.jpeg?_gl=1*gybo6z*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExOTI2JGo2MCRsMCRoMA.."
-    },
-    {
       "id": "1772084196836",
       "name": "Executive Suite",
       "price": "150",
@@ -74,13 +65,13 @@
       "img": "https://promos.makemytrip.com/Hotels_product/Luxe/brands.png"
     },
     {
-      "id": "1772084434060",
-      "name": "villa rooms ",
-      "price": "200",
-      "bed": "3",
-      "bath": "3",
-      "desc": "asdasd asd sadf sdaf sdaf sdf",
-      "img": "https://promos.makemytrip.com/altacco_luxe/imgs/luxe_villa.jpg"
+      "id": "1772170657675",
+      "name": "Deluxe Ocean Suitesd",
+      "price": "130",
+      "bed": "5",
+      "bath": "4",
+      "desc": "afcedsef sdf serdfg aserfaewrdsfsdf",
+      "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?_gl=1*142nwcb*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NjU4Nzk4OTAkbzQ0JGcxJHQxNzY1ODc5ODk0JGo1NiRsMCRoMA.."
     }
   ]
 }

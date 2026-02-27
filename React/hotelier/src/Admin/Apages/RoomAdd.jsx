@@ -3,6 +3,7 @@ import Aheader from '../Acoman/Aheader'
 import AnavTi from '../Acoman/AnavTi'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function RoomAdd() {
 
@@ -31,10 +32,20 @@ function RoomAdd() {
     const getRoom = async (e) => {
         e.preventDefault()
 
+
+
         try {
+
+            if (room.bath == "" || room.desc == "" || room.img == "" || room.name || room.bed == "" || room.price == "") {
+                console.log("pls field data ..");
+                toast.error('pls field data..',);
+                return false;
+            }
+
             const res = await axios.post("http://localhost:3000/rooms", room)
-            console.log(res.data)
+            // console.log(res.data)
             redirect("/roommange")
+            toast.success("rooms Successfully add..")
             setroom({
                 id: "",
                 name: "",
@@ -79,9 +90,9 @@ function RoomAdd() {
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
-                                                <option value="3">4</option>
-                                                <option value="3">5</option>
-                                                <option value="3">6</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
                                             </select>
                                             <label for="floatingSelect">Rooms bed</label>
                                         </div>
@@ -93,7 +104,7 @@ function RoomAdd() {
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
-                                                <option value="3">4</option>
+                                                <option value="4">4</option>
                                             </select>
                                             <label for="floatingSelect">Rooms bath</label>
                                         </div>

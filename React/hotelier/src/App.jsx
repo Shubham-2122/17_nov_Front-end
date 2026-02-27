@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './Website/Pages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Slide, ToastContainer, toast } from 'react-toastify';
 import About from './Website/Pages/About'
 import Service from './Website/Pages/Service'
 import Rooms from './Website/Pages/Rooms'
@@ -18,6 +19,17 @@ function App() {
   return (
     <BrowserRouter>
       <div>
+        <ToastContainer position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          transition={Slide} />
         <Routes>
 
           <Route path='/' element={<Home />} />
@@ -25,15 +37,15 @@ function App() {
           <Route path='/service' element={<Service />} />
           <Route path='/rooms' element={<Rooms />} />
           <Route path='/booking' element={<Booking />} />
-           <Route path='/team' element={<Team />} />
-           <Route path='/testi' element={<Testi />} />
-            <Route path='/contact' element={<Contact />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/testi' element={<Testi />} />
+          <Route path='/contact' element={<Contact />} />
 
 
-            <Route path='*' element={<NotFound />} />
+          <Route path='*' element={<NotFound />} />
 
 
-      {/* admin */}
+          {/* admin */}
           <Route path='/dash' element={<Dashboard />} />
           <Route path='/roommange' element={<RoomsMange />} />
           <Route path='/roomadd' element={<RoomAdd />} />
