@@ -49,18 +49,18 @@
     {
       "id": "2",
       "name": "Super Deluxe",
-      "price": "80",
+      "price": "170",
       "bed": "3",
       "bath": "2",
-      "desc": "helloo  rooms availd  asdsa dsa sa dfor data",
+      "desc": "helloo  rooms availd  asdsa dsa sa dfor dataasd",
       "img": "https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg?_gl=1*1p5y1r9*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NzE5MTE4NjYkbzYzJGcxJHQxNzcxOTExOTI2JGo2MCRsMCRoMA.."
     },
     {
       "id": "1772084196836",
       "name": "Executive Suite",
-      "price": "150",
-      "bed": "3",
-      "bath": "2",
+      "price": "200",
+      "bed": "4",
+      "bath": "3",
       "desc": "Hello this villa for room data here",
       "img": "https://promos.makemytrip.com/Hotels_product/Luxe/brands.png"
     },

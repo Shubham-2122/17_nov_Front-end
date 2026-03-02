@@ -46,7 +46,7 @@ function RoomsMange() {
     }
 
     // deleteproduct
-    const deleteRoom=async(id)=>{
+    const deleteRoom = async (id) => {
         try {
 
 
@@ -55,8 +55,57 @@ function RoomsMange() {
             toast.success("Room delete SuccessFully..");
             fetchData()
         } catch (error) {
-            console.log("Api data not Found",error)
+            console.log("Api data not Found", error)
             toast.error("Apid data not Found")
+        }
+    }
+
+    // model open or close
+    const [edit, setedit] = useState(null)
+    const [edited, setedited] = useState({
+        id: "",
+        name: "",
+        price: "",
+        bed: "",
+        bath: "",
+        desc: "",
+        img: ""
+    })
+
+    const GetModel = (data) => {
+        setedit(data)
+        setedited(data)
+        // console.log(data)
+    }
+
+    const getchange = (e) => {
+        setedited({
+            ...edited,
+            [e.target.name]: e.target.value
+        })
+        // console.log(edited)
+    }
+
+    const UpdateRoom = async (e) => {
+        e.preventDefault()
+
+        try {
+            const res = await axios.put(`http://localhost:3000/rooms/${edited.id}`, edited)
+            // console.log(res.data)
+            toast.success("room updated")
+            setedited({
+                name: "",
+                price: "",
+                bed: "",
+                bath: "",
+                desc: "",
+                img: ""
+            })
+            fetchData()
+            setedit(null)
+        } catch (error) {
+            console.log("Api data not found", error)
+            toast.error("Api data not Found")
         }
     }
 
@@ -89,8 +138,8 @@ function RoomsMange() {
                                         <td>{data.bed}</td>
                                         <td>
                                             <button data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => getRooms(data.id)} className='btn btn-primary'>View</button>
-                                            <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger' onClick={()=>deleteRoom(data.id)}>Delete</button>
+                                            <button className='btn btn-success mx-2' onClick={() => GetModel(data)}>Edit</button>
+                                            <button className='btn btn-danger' onClick={() => deleteRoom(data.id)}>Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -139,6 +188,84 @@ function RoomsMange() {
                         </div>
                     </div>
                 </div>
+
+                {
+                    edit && (
+                        <div className="container py-5">
+                            <h1>Hello this Rooms Update</h1>
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <div className="wow fadeInUp" data-wow-delay="0.2s">
+                                        <form >
+                                            <div className="row g-3">
+                                                <div className="col-md-6">
+                                                    <div className="form-floating">
+                                                        <input name='name' onChange={getchange} value={edited.name} type="text" className="form-control" id="name" placeholder="Rooms Name" />
+                                                        <label htmlFor="name">Rooms Name</label>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <div className="form-floating">
+                                                        <input name='price' onChange={getchange} value={edited.price} type="text" className="form-control" id="Price" placeholder="Rooms Price" />
+                                                        <label htmlFor="Price">Rooms Price</label>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" onChange={getchange} value={edited.bed} name='bed' id="floatingSelect" aria-label="Rooms bed">
+                                                            <option hidden>Rooms bed</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                        </select>
+                                                        <label for="floatingSelect">Rooms bed</label>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <div class="form-floating">
+                                                        <select name='bath' onChange={getchange} value={edited.bath} class="form-select" id="floatingSelect" aria-label="Rooms bath">
+                                                            <option hidden>Rooms bath</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                        </select>
+                                                        <label for="floatingSelect">Rooms bath</label>
+                                                    </div>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="form-floating">
+                                                        <input type="url" onChange={getchange} value={edited.img} name='img' className="form-control" id="img" placeholder="Rooms Image" />
+                                                        <label htmlFor="img">Rooms Image</label>
+                                                    </div>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="form-floating">
+                                                        <textarea name='desc' onChange={getchange} value={edited.desc} className="form-control" placeholder="Leave a message here" id="message" style={{ height: 150 }} defaultValue={""} />
+                                                        <label htmlFor="message">Rooms Descrition</label>
+                                                    </div>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="row">
+                                                        <div className="col md-6">
+                                                            <button className="btn btn-primary w-100 py-3" onClick={UpdateRoom} type="submit">Update Room</button>
+                                                        </div>
+                                                        <div className="col md-6">
+                                                            <button className="btn btn-primary w-100 py-3" onClick={() => setedit(null)} >Cancle Room</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }
             </div>
         </div>
     )
