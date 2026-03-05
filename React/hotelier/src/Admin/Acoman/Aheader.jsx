@@ -52,6 +52,13 @@ function Aheader() {
                                             <NavLink to="/roomadd" className="dropdown-item">Room Add</NavLink>
                                         </div>
                                     </div>
+                                     <div className="nav-item dropdown">
+                                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Team</a>
+                                        <div className="dropdown-menu rounded-0 m-0">
+                                            <NavLink to="/teamManage" className="dropdown-item">Manage</NavLink>
+                                            <NavLink to="/teamadd" className="dropdown-item">Team Add</NavLink>
+                                        </div>
+                                    </div>
                                     <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                         <div className="dropdown-menu rounded-0 m-0">

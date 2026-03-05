@@ -73,5 +73,31 @@
       "desc": "afcedsef sdf serdfg aserfaewrdsfsdf",
       "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?_gl=1*142nwcb*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NjU4Nzk4OTAkbzQ0JGcxJHQxNzY1ODc5ODk0JGo1NiRsMCRoMA.."
     }
+  ],
+  "team": [
+    {
+      "id": "1",
+      "name": "Aman",
+      "Designation": "staff",
+      "img": "https://th.bing.com/th/id/OIP.CAZ6mgnz1Smdj8eTRUwqYwHaHa?w=204&h=204&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "id": "2",
+      "name": "Karan",
+      "Designation": "Manager",
+      "img": "https://th.bing.com/th/id/OIP.kuzaTPtFFQd5x1t-KEBsUgHaHT?w=220&h=217&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "id": "3",
+      "name": "shubham jadav",
+      "Designation": "super staff",
+      "img": "https://th.bing.com/th/id/OIP.Bxo8V_VkC6AgJygXmAh54wHaHa?w=211&h=211&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "id": "1772688544916",
+      "name": "Bhavin",
+      "img": "https://th.bing.com/th/id/OIP.l0zv54-6oV4i-tcUSpmkAQHaHa?w=211&h=211&c=7&r=0&o=7&pid=1.7&rm=3",
+      "Designation": "Boss"
+    }
   ]
 }

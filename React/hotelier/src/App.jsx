@@ -13,6 +13,8 @@ import NotFound from './Website/Pages/NotFound'
 import Dashboard from './Admin/Apages/Dashboard'
 import RoomsMange from './Admin/Apages/RoomsMange'
 import RoomAdd from './Admin/Apages/RoomAdd'
+import TeamManage from './Admin/Apages/TeamManage';
+import TeamAdd from './Admin/Apages/TeamAdd';
 
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
           <Route path='/dash' element={<Dashboard />} />
           <Route path='/roommange' element={<RoomsMange />} />
           <Route path='/roomadd' element={<RoomAdd />} />
+          <Route path='/teamManage' element={<TeamManage />} />
+          <Route path='/teamadd' element={<TeamAdd />} />
 
         </Routes>
 
