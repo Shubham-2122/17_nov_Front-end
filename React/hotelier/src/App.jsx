@@ -15,6 +15,7 @@ import RoomsMange from './Admin/Apages/RoomsMange'
 import RoomAdd from './Admin/Apages/RoomAdd'
 import TeamManage from './Admin/Apages/TeamManage';
 import TeamAdd from './Admin/Apages/TeamAdd';
+import Alogin from './Admin/Apages/Alogin';
 
 
 function App() {
@@ -53,6 +54,8 @@ function App() {
           <Route path='/roomadd' element={<RoomAdd />} />
           <Route path='/teamManage' element={<TeamManage />} />
           <Route path='/teamadd' element={<TeamAdd />} />
+
+          <Route path='/alogin' element={<Alogin />} />
 
         </Routes>
 
