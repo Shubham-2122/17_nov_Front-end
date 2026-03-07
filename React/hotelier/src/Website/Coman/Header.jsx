@@ -1,7 +1,24 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Header() {
+
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Uid")){
+            redirect("/login")
+        }
+    })
+
+    const logout=()=>{
+        localStorage.removeItem("Uid")
+        localStorage.removeItem("Uname")
+        toast.success("successfully logout")
+        redirect("/login")
+    }
+
     return (
         <div>
             {/* Header Start */}
@@ -56,6 +73,29 @@ function Header() {
                                         </div>
                                     </div>
                                     <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Uid")){
+                                                return(
+                                                    <Link  className="nav-item nav-link">Hello.. {localStorage.getItem("Uname")}</Link>
+                                                )
+                                            }
+                                        })()
+                                    }
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Uid")){
+                                                return(
+                                                     <Link onClick={logout} className="nav-item nav-link">logout</Link>
+                                                )
+                                            }
+                                            else{
+                                                return(
+                                                     <Link to="/login" className="nav-item nav-link">login</Link>
+                                                )
+                                            }
+                                        })()
+                                    }
                                 </div>
                                 <a href="https://htmlcodex.com/hotel-html-template-pro" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3" /></a>
                             </div>

@@ -16,6 +16,7 @@ import RoomAdd from './Admin/Apages/RoomAdd'
 import TeamManage from './Admin/Apages/TeamManage';
 import TeamAdd from './Admin/Apages/TeamAdd';
 import Alogin from './Admin/Apages/Alogin';
+import Ulogin from './Website/Pages/Ulogin';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path='/team' element={<Team />} />
           <Route path='/testi' element={<Testi />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/login' element={<Ulogin />} />
 
 
           <Route path='*' element={<NotFound />} />

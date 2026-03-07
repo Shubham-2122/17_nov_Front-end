@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Aheader() {
 
@@ -10,6 +11,13 @@ function Aheader() {
             redirect("/alogin")
         }
     })
+
+    const logout=()=>{
+        localStorage.removeItem("Aid")
+        localStorage.removeItem("Aname")
+        toast.success("Successfully Logout..")
+        redirect("/alogin")
+    }
 
 
   return (
@@ -78,8 +86,32 @@ function Aheader() {
                                         </div>
                                     </div>
                                     <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Aid")){
+                                                return(
+                                                    <Link className="nav-item nav-link">Hello.. {localStorage.getItem("Aname")}</Link>
+                                                )
+                                            }
+                                        })()
+                                    }
+
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Aid")){
+                                                return(
+                                                    <Link onClick={logout} className="nav-item nav-link">logout</Link>
+                                                )
+                                            }
+                                            else{
+                                                return(
+                                                    <Link to="/alogin" className="nav-item nav-link">Alogin</Link>
+                                                )
+                                            }
+                                        })()
+                                    }
                                 </div>
-                                <a href="https://htmlcodex.com/hotel-html-template-pro" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3" /></a>
+                                
                             </div>
                         </nav>
                     </div>
