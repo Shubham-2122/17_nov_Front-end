@@ -17,6 +17,8 @@ import TeamManage from './Admin/Apages/TeamManage';
 import TeamAdd from './Admin/Apages/TeamAdd';
 import Alogin from './Admin/Apages/Alogin';
 import Ulogin from './Website/Pages/Ulogin';
+import Register from './Website/Pages/Register';
+import ProfileUpdated from './Website/Pages/ProfileUpdated';
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
           <Route path='/testi' element={<Testi />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Ulogin />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/profile' element={<ProfileUpdated />} />
 
 
           <Route path='*' element={<NotFound />} />

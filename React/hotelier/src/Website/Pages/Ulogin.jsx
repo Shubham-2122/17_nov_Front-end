@@ -11,7 +11,7 @@ import {
     MDBCheckbox
 }
     from 'mdb-react-ui-kit';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 
@@ -111,7 +111,7 @@ function Ulogin() {
                                 <hr className="my-4" />
 
                                 <div>
-                                    <p className="mb-0">Don't have an account? <a href="#!" className="text-info-50 fw-bold">Sign Up</a></p>
+                                    <p className="mb-0">Don't have an account? <Link to="/register" className="text-info-50 fw-bold">Sign Up</Link></p>
 
                                 </div>
                             </MDBCardBody>
