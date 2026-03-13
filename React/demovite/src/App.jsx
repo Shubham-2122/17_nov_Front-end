@@ -5,6 +5,8 @@ import Border from './Compoenent/Border'
 import Space from './Compoenent/Space'
 import Flex from './Compoenent/Flex'
 import DataCss from './Compoenent/DataCss'
+import Count from './Compoenent/Count'
+import UserApi from './Compoenent/UserApi'
 
 function App() {
 
@@ -22,7 +24,9 @@ function App() {
       {/* <Border /> */}
       {/* <Space />  */}
       {/* <Flex /> */}
-      <DataCss />
+      {/* <DataCss /> */}
+      {/* <Count /> */}
+      <UserApi />
     </div>
   )
 }

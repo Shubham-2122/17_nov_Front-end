@@ -20,6 +20,11 @@
         background: lightcoral;
         box-shadow: 0 0 20px 10px gray;
     }
+    .btn{
+        padding: 5px 20px;
+        border: 2px solid ;
+        background-color: lightcoral;
+    }
 }
 
 /* reuse fontsize , font-famaliy */
