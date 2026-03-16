@@ -4,9 +4,11 @@ import { decrement, increment, zero } from './counterSlice'
 
 function Counter() {
 
+  // state access selector 
     const count = useSelector((state)=>state.count.value)
     console.log(count)
 
+    // function access disptach
     const dispatch = useDispatch()
 
   return (
