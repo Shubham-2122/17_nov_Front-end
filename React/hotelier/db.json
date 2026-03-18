@@ -106,5 +106,6 @@
       "img": "https://th.bing.com/th/id/OIP.l0zv54-6oV4i-tcUSpmkAQHaHa?w=211&h=211&c=7&r=0&o=7&pid=1.7&rm=3",
       "Designation": "Boss"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

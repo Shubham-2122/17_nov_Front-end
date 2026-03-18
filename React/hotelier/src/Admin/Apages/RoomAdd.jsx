@@ -36,7 +36,7 @@ function RoomAdd() {
 
         try {
 
-            if (room.bath == "" || room.desc == "" || room.img == "" || room.name || room.bed == "" || room.price == "") {
+            if (room.bath == "" || room.desc == "" || room.img == "" || room.name == "" || room.bed == "" || room.price == "") {
                 console.log("pls field data ..");
                 toast.error('pls field data..',);
                 return false;

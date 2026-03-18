@@ -1,12 +1,24 @@
 import React from 'react'
 import UsersGet from './Component/UsersGet'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import UserAdd from './Component/UserAdd'
+import Header from './Component/Header'
 
 function App() {
 
   return (
-    <div>
-      <UsersGet />
+    <BrowserRouter>
+
+     <div>
+      <Header />
+      <Routes>
+        <Route path='/' element={<UsersGet />} />
+        <Route path='/add' element={<UserAdd />} />
+      </Routes>
     </div>
+    
+    </BrowserRouter>
+   
   )
 }
 
