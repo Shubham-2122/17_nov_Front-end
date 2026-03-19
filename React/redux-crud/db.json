@@ -1,39 +1,54 @@
 {
-    "users":[
-        {
-            "id":1,
-            "name":"karan patel",
-            "email":"karan@gamil.com",
-            "password":"1234",
-            "gender":"male"
-        },
-        {
-            "id":2,
-            "name":"arayn patel",
-            "email":"arayn@gamil.com",
-            "password":"123456",
-            "gender":"male"
-        },
-        {
-            "id":3,
-            "name":"mahi patel",
-            "email":"mahi@gamil.com",
-            "password":"1234567",
-            "gender":"female"
-        }
-    ],
-    "admin":[
-        {
-            "id":"1",
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "password":"123456"
-        },
-         {
-            "id":"2",
-            "name":"subadmin",
-            "email":"subadmin@gmail.com",
-            "password":"123456"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "karan patel",
+      "email": "karan@gamil.com",
+      "password": "1234",
+      "gender": "male"
+    },
+    {
+      "id": "2",
+      "name": "arayn patel",
+      "email": "arayn@gamil.com",
+      "password": "123456",
+      "gender": "male"
+    },
+    {
+      "id": "3",
+      "name": "mahi patel",
+      "email": "mahi@gamil.com",
+      "password": "1234567",
+      "gender": "female"
+    },
+    {
+      "id": "1773898467527",
+      "name": "shubham",
+      "email": "shubham@gmail.com",
+      "gender": "",
+      "password": ""
+    },
+    {
+      "id": "1773898487414",
+      "name": "sujal",
+      "email": "sujal@gmail.com",
+      "gender": "male",
+      "password": "asdfsadf"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "subadmin",
+      "email": "subadmin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
