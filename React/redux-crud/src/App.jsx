@@ -14,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<UsersGet />} />
         <Route path='/add' element={<UserAdd />} />
+         <Route path='/edit/:id' element={<UserAdd />} />
       </Routes>
     </div>
     
