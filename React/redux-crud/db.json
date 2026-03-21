@@ -9,10 +9,24 @@
     },
     {
       "id": "1773984240895",
-      "name": "shubham",
-      "email": "shubham@gmail.com",
+      "name": "shubham  jadav",
+      "email": "shubhamj@gmail.com",
       "gender": "male",
       "password": "asdf"
+    },
+    {
+      "id": "1774070013038",
+      "name": "karan patel",
+      "email": "karan@gmail.com",
+      "gender": "male",
+      "password": "sdfsd"
+    },
+    {
+      "id": "1774070853839",
+      "name": "kinjal",
+      "email": "kinjal@gmail.com",
+      "gender": "female",
+      "password": "safdsa"
     }
   ],
   "admin": [
