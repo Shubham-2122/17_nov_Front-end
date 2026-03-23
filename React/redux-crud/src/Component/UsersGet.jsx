@@ -40,7 +40,7 @@ function UsersGet() {
                     <td>
                       <button className='btn btn-info'>View</button>
                       <Link to={`/edit/${data.id}`} className='btn btn-success mx-2'>Edit</Link>
-                      <button className='btn btn-danger' onClick={()=>dispatch(deletedata(data?.id))}>Delete</button>
+                      <button className='btn btn-danger' onClick={()=>dispatch(deletedata(data.id))}>Delete</button>
                     </td>
                   </tr>
                 )

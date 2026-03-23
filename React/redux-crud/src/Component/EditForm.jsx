@@ -23,12 +23,12 @@ function EditForm() {
         password: ""
     })
 
-  useEffect(() => {
-    if (users.length > 0) {
-        const singleuser = users.find((data) => data.id == id)
-        setedited(singleuser || {})
-    }
-}, [users, id])
+    useEffect(() => {
+        if (users.length > 0) {
+            const singleuser = users.find((data) => data.id == id)
+            setedited(singleuser || {})
+        }
+    }, [users, id])
     const getchange = (e) => {
         setedited({
             ...edited,
@@ -37,9 +37,9 @@ function EditForm() {
         console.log(edited)
     }
 
-    const getsubmit = async(e) => {
+    const getsubmit =  (e) => {
         e.preventDefault()
-        await dispatch(updatedata(edited))
+         dispatch(updatedata(edited))
         setedited({
             name: "",
             email: "",
@@ -58,24 +58,24 @@ function EditForm() {
                         <form onSubmit={getsubmit}>
                             <div className="mb-3">
                                 <label htmlFor="Name" className="form-label">Enter your Name</label>
-                                <input value={edited.name} onChange={getchange} type="text" name='name' className="form-control" id="Name" />
+                                <input value={edited && edited.name} onChange={getchange} type="text" name='name' className="form-control" id="Name" />
 
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                                <input value={edited.email} onChange={getchange} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                <input value={edited && edited.email} onChange={getchange} type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                 <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                             </div>
                             <div className="mb-3">
                                 <div>
                                     <div className="form-check">
-                                        <input name="gender" onChange={getchange} checked={edited.gender === "male"} value="male" className="form-check-input" type="radio" id="radioDisabled" />
+                                        <input name="gender" onChange={getchange} checked={edited && edited.gender === "male"} value="male" className="form-check-input" type="radio" id="radioDisabled" />
                                         <label className="form-check-label" htmlFor="radioDisabled">
                                             Male
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input value="female" onChange={getchange} checked={edited.gender === "female"} name='gender' className="form-check-input" type="radio" id="radioCheckedDisabled" />
+                                        <input value="female" onChange={getchange} checked={edited && edited.gender === "female"} name='gender' className="form-check-input" type="radio" id="radioCheckedDisabled" />
                                         <label className="form-check-label" htmlFor="radioCheckedDisabled">
                                             Female
                                         </label>
@@ -85,7 +85,7 @@ function EditForm() {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                                <input value={edited.password} onChange={getchange} type="password" name='password' className="form-control" id="exampleInputPassword1" />
+                                <input value={edited && edited.password} onChange={getchange} type="password" name='password' className="form-control" id="exampleInputPassword1" />
                             </div>
 
                             <button type="submit" className="btn btn-primary">Update User</button>

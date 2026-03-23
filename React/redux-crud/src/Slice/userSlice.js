@@ -128,9 +128,9 @@ export const userSlice = createSlice({
             .addCase(updatedata.fulfilled, (state, action) => {
                 state.loading = false
                 
-                state.users = state.users.map((data)=>{
-                    data.id === action.payload.id ? action.payload : data
-                }) 
+                state.users = state.users.map((user)=>
+                    user.id === action.payload.id ? action.payload : user
+                ) 
             })
 
             .addCase(updatedata.rejected, (state, action) => {
