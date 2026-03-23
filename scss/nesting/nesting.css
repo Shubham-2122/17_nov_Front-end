@@ -1,0 +1,18 @@
+.ul {
+  list-style: none;
+}
+.ul li {
+  display: inline-block;
+  background: lightcoral;
+  padding: 10px 20px;
+}
+.ul li:hover {
+  background: lawngreen;
+}
+.ul li:hover a {
+  color: white;
+}
+.ul li a {
+  color: black;
+  text-decoration: none;
+}/*# sourceMappingURL=nesting.css.map */

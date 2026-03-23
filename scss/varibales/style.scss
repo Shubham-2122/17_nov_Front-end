@@ -1,0 +1,15 @@
+$bg-color : lightcoral;
+$color : rgb(94, 180, 209);
+$font : 30px;
+
+h1{
+    background-color: $bg-color;
+    color: $color;
+    padding: $font;
+}
+
+h2{
+    background-color: $color;
+    font-size: $font;
+    color: white;
+}
