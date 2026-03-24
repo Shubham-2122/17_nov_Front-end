@@ -1,0 +1,35 @@
+@mixin bordered(){
+    border: 5px solid gray;
+}
+
+@mixin border2($size,$color){
+    border: $size solid $color;
+}
+
+@mixin flex($data){
+    display: flex;
+    justify-content: $data;
+}
+
+h1{
+    @include bordered();
+}
+
+h2{
+    @include bordered();
+}
+h3{
+    @include border2(10px,green)
+}
+
+.main{
+    @include flex(space-between);
+    .box{
+        height: 200px;
+        width: 200px;
+        @include bordered();
+    }
+    @media only screen and (max-width:768px) {
+        @include flex(center)
+    }
+}

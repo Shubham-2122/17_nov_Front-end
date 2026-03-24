@@ -1,0 +1,8 @@
+@use "base";
+
+h2{
+    background-color: base.$color;
+    color: base.$bg-color;
+    font-size: 30px;
+    padding: 30px;
+}

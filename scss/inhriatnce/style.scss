@@ -1,0 +1,14 @@
+%data{
+    border: 5px solid gold;
+    padding: 10px;
+    color: red;
+}
+
+h1{
+    @extend %data;
+}
+
+h2{
+     @extend %data;
+     border-color: aqua;
+}

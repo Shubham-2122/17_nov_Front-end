@@ -5,11 +5,12 @@ $font : 30px;
 h1{
     background-color: $bg-color;
     color: $color;
-    padding: $font;
+    padding: $font /2;
 }
 
 h2{
     background-color: $color;
-    font-size: $font;
+    // font-size: $font + 30px;
+    font-size: $font * 2;
     color: white;
 }
