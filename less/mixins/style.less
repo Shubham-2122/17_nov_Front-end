@@ -1,0 +1,33 @@
+.bordered(){
+    border: 5px solid gold;
+}
+
+.bordered2(@size,@color){
+    border: @size solid @color;
+}
+
+.flexdata(@data){
+    display: flex;
+    justify-content: @data;
+}
+
+
+h1{
+    .bordered();
+}
+
+h2{
+    .bordered2(3px,red);
+}
+h3{
+    .bordered2(3px,blue);
+}
+
+.main{
+    .flexdata(space-between);
+    .box{
+        height: 200px;
+        width: 200px;
+        .bordered2(5px, gray)
+    }
+}

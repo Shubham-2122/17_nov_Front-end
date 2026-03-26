@@ -1,0 +1,16 @@
+.data {
+  padding: 10px 20px;
+  background: lightcoral;
+  border-radius: 10px;
+}
+.data:hover {
+  background: lightgreen;
+}
+.nav {
+  padding: 10px 20px;
+  background: lightseagreen;
+  border-radius: 10px;
+}
+.nav:hover {
+  background-color: rebeccapurple;
+}

@@ -1,0 +1,18 @@
+h1 {
+  border: 5px solid gold;
+}
+h2 {
+  border: 3px solid red;
+}
+h3 {
+  border: 3px solid blue;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main .box {
+  height: 200px;
+  width: 200px;
+  border: 5px solid gray;
+}
