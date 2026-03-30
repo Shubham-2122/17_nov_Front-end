@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse Ecomarce's full collection of premium clothing, footwear, bags, and accessories.">
+    <title>Shop All Products — Ecomarce</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <div class="navbar__logo-icon">🛍</div>
+                <span class="text-gradient">Ecomarce</span>
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Shop</a></li>
+                <li><a href="products.html?cat=Clothing">Clothing</a></li>
+                <li><a href="products.html?cat=Footwear">Footwear</a></li>
+                <li><a href="products.html?cat=Accessories">Accessories</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="cart.html" class="navbar__icon-btn" title="Cart">
+                    🛒
+                    <span class="badge cart-badge">0</span>
+                </a>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop All</a>
+        <a href="products.html?cat=Clothing">Clothing</a>
+        <a href="products.html?cat=Footwear">Footwear</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="container">
+            <div class="page-hero__breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span>Shop</span>
+            </div>
+            <h1 class="page-hero__title">All <span class="text-gradient">Products</span></h1>
+            <p style="color:var(--clr-text-muted);margin-top:8px;">Discover our curated collection</p>
+        </div>
+    </div>
+
+    <div style="padding-bottom: var(--space-3xl);">
+        <div class="container">
+            <!-- Search -->
+            <div style="margin-bottom:var(--space-lg);max-width:480px;">
+                <div class="search-bar">
+                    <span class="search-bar__icon">🔍</span>
+                    <input class="search-bar__input" id="searchInput" placeholder="Search products...">
+                </div>
+            </div>
+
+            <div class="shop-layout">
+                <!-- Filters -->
+                <aside class="filters-panel" id="filtersPanel">
+                    <div class="filters-panel__title">Filters</div>
+
+                    <div class="filter-group">
+                        <div class="filter-group__label">Category</div>
+                        <label class="filter-option">
+                            <input type="checkbox" data-category="Clothing"> <span>Clothing</span><span
+                                class="count">5</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" data-category="Footwear"> <span>Footwear</span><span
+                                class="count">2</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" data-category="Accessories"> <span>Accessories</span><span
+                                class="count">4</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" data-category="Bags"> <span>Bags</span><span class="count">2</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-group__label">Max Price</div>
+                        <div class="price-range">
+                            <input type="range" id="priceRange" min="20" max="300" value="300">
+                            <div class="price-range__values"><span>$20</span><span id="priceMax">$300</span></div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-group__label">Badge</div>
+                        <div class="tags" style="flex-direction:column;align-items:flex-start;gap:6px;">
+                            <label class="filter-option"><input type="checkbox" data-category="__new"> <span>New
+                                    Arrivals</span></label>
+                            <label class="filter-option"><input type="checkbox" data-category="__sale"> <span>On
+                                    Sale</span></label>
+                            <label class="filter-option"><input type="checkbox" data-category="__hot">
+                                <span>Bestsellers</span></label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn--ghost btn--sm" onclick="resetFilters()"
+                        style="width:100%;margin-top:4px;">Clear Filters</button>
+                </aside>
+
+                <!-- Products Area -->
+                <div>
+                    <!-- Sort Bar -->
+                    <div class="sort-bar">
+                        <div>
+                            <span class="sort-bar__count" id="resultCount">12 products</span>
+                            <button id="mobileFilterBtn" class="btn btn--ghost btn--sm"
+                                style="margin-left:12px;display:none;">⚙ Filters</button>
+                        </div>
+                        <div class="sort-bar__right">
+                            <select class="sort-select" id="sortSelect">
+                                <option value="featured">Featured</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-asc">Price: Low to High</option>
+                                <option value="price-desc">Price: High to Low</option>
+                                <option value="rating">Top Rated</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid"></div>
+                    <div class="pagination" id="pagination">
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <span>© 2025 Ecomarce. All rights reserved.</span>
+                <span><a href="index.html" style="color:var(--clr-primary-light)">← Back to Home</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Show mobile filter button on small screens
+        if (window.innerWidth <= 1024) {
+            document.getElementById('mobileFilterBtn').style.display = '';
+        }
+        function resetFilters() {
+            document.querySelectorAll('.filter-option input').forEach(el => el.checked = false);
+            const pr = document.getElementById('priceRange');
+            if (pr) { pr.value = pr.max; updatePriceDisplay(); }
+            document.getElementById('searchInput').value = '';
+            applyFilters();
+        }
+    </script>
+</body>
+
+</html>

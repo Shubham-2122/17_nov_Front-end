@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View product details, choose your size and add to cart on Ecomarce.">
+    <title>Product Detail — Ecomarce</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <div class="navbar__logo-icon">🛍</div>
+                <span class="text-gradient">Ecomarce</span>
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="products.html?cat=Clothing">Clothing</a></li>
+                <li><a href="products.html?cat=Footwear">Footwear</a></li>
+                <li><a href="products.html?cat=Accessories">Accessories</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="cart.html" class="navbar__icon-btn" title="Cart">
+                    🛒
+                    <span class="badge cart-badge">0</span>
+                </a>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop All</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div style="padding-top: var(--navbar-h);">
+        <div class="container" style="padding-top: var(--space-lg);">
+            <div class="page-hero__breadcrumb" style="justify-content:flex-start;">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <a href="products.html">Shop</a>
+                <span>›</span>
+                <span id="productCategory" style="color:var(--clr-text);">Product</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="container">
+        <div class="product-detail-layout">
+            <!-- Gallery -->
+            <div class="gallery">
+                <div class="gallery__main" id="galleryMainWrap">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80" alt="Product"
+                        id="galleryMain">
+                </div>
+                <div class="gallery__thumbs">
+                    <div class="gallery__thumb"><img src="" alt="Thumb 1"></div>
+                    <div class="gallery__thumb"><img src="" alt="Thumb 2"></div>
+                    <div class="gallery__thumb"><img src="" alt="Thumb 3"></div>
+                    <div class="gallery__thumb"><img src="" alt="Thumb 4"></div>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="product-info">
+                <div class="product-info__category" id="productCategory">Clothing</div>
+                <h1 class="product-info__name" id="productName">Loading product...</h1>
+                <div class="product-card__rating" style="margin-bottom:var(--space-md);">
+                    <div id="productStars" class="stars">★★★★★</div>
+                    <span class="rating-count" id="productRatingCount">(0 reviews)</span>
+                </div>
+                <div class="product-info__price-row">
+                    <span class="product-info__price" id="productPrice">$0</span>
+                    <span class="product-info__price-old" id="productOldPrice"></span>
+                    <span class="product-info__discount" id="productDiscount"></span>
+                </div>
+                <p class="product-info__desc">A premium quality item crafted with the finest materials, designed for
+                    comfort and style. Perfect for any occasion — elevate your everyday look with this essential piece
+                    from our curated collection.</p>
+
+                <div class="product-info__label">Select Size</div>
+                <div class="size-grid" id="sizeGrid">
+                    <button class="size-btn active" onclick="selectSize(this,'S')">S</button>
+                    <button class="size-btn" onclick="selectSize(this,'M')">M</button>
+                    <button class="size-btn" onclick="selectSize(this,'L')">L</button>
+                    <button class="size-btn" onclick="selectSize(this,'XL')">XL</button>
+                </div>
+
+                <div class="product-info__label">Quantity</div>
+                <div class="qty-row">
+                    <div class="qty-control">
+                        <button class="qty-btn" id="qtyMinus">−</button>
+                        <span class="qty-value" id="detailQty">1</span>
+                        <button class="qty-btn" id="qtyPlus">+</button>
+                    </div>
+                </div>
+
+                <div class="add-to-cart-row">
+                    <button class="btn btn--primary btn--lg" id="addToCartBtn" style="flex:1;">🛒 Add to Cart</button>
+                    <button class="btn btn--ghost btn--lg" id="wishlistBtn">♡ Wishlist</button>
+                </div>
+
+                <div class="product-info__meta">
+                    <div class="product-info__meta-item"><span>🚀</span> Free shipping on orders over $100</div>
+                    <div class="product-info__meta-item"><span>↩️</span> Free 30-day returns</div>
+                    <div class="product-info__meta-item"><span>✅</span> Genuine product guarantee</div>
+                    <div class="product-info__meta-item"><span>📦</span> Ships within 2–4 business days</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div style="padding-bottom: var(--space-3xl);">
+            <div class="section-header-row">
+                <div class="section-header">
+                    <span class="section-tag">You May Also Like</span>
+                    <h2 class="section-title">Related Products</h2>
+                </div>
+                <a href="products.html" class="btn btn--ghost">View All →</a>
+            </div>
+            <div class="products-grid" id="relatedGrid"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <span>© 2025 Ecomarce. All rights reserved.</span>
+                <span><a href="products.html" style="color:var(--clr-primary-light)">← Back to Shop</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
